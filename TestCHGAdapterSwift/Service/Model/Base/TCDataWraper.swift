@@ -27,3 +27,7 @@ class TCDataWraper<T:HandyJSON>: TCDataType {
         return self.code == 200
     }
 }
+
+extension Array:HandyJSON {
+    
+}

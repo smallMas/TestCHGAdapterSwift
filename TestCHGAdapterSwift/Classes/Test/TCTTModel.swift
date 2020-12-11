@@ -8,23 +8,36 @@
 import UIKit
 import HandyJSON
 
-enum TTState:Int,HandyJSONEnum {
-    
-    case none = 0
-    case ing = 1
-    case ed = 2
-}
-
-class TCTTModel: HandyJSON {
+class TCTTBaseModel: HandyJSON,Codable {
     var name : String?
-    var state : TTState?
     
     required init() {}
 }
-class BasicTypes: HandyJSON {
-    var int: Int = 2
-    var doubleOptional: Double?
-    var stringImplicitlyUnwrapped: String!
 
+class TCTTModel: TCTTBaseModel {
+    enum TTState:Int,HandyJSONEnum,Codable {
+        case none = 0
+        case ing = 1
+        case ed = 2
+    }
+    
+//    var name : String?
+    var state : TTState?
+    var hobbies : Array<String>?
+    var userEduItem : Array<TCTTSchoolModel>?
+    var work : TCTTWorkModel?
+}
+
+class TCTTSchoolModel: HandyJSON,Codable {
+    var schoolName : String?
+    var schoolId : String?
+    
+    required init() {}
+}
+
+class TCTTWorkModel: HandyJSON,Codable {
+    var positionName : String?
+    var companyName : String?
+    
     required init() {}
 }

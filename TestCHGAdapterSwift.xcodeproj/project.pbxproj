@@ -12,6 +12,7 @@
 		E5D529D4A73CBFC9E5ED4663 /* Pods_TestCHGAdapterSwift_TestCHGAdapterSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649C9CBCC52BC6BB9B7B886B /* Pods_TestCHGAdapterSwift_TestCHGAdapterSwiftUITests.framework */; };
 		E94D053C257DFD9A0020253A /* TCMineInfoBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D053B257DFD9A0020253A /* TCMineInfoBean.swift */; };
 		E94D0542257E08BE0020253A /* TCTTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D0541257E08BE0020253A /* TCTTModel.swift */; };
+		E94D0557257E293F0020253A /* TCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D0556257E293F0020253A /* TCMainViewController.swift */; };
 		E96CB36E25760754006EBF8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CB36D25760754006EBF8B /* AppDelegate.swift */; };
 		E96CB37225760754006EBF8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CB37125760754006EBF8B /* ViewController.swift */; };
 		E96CB37525760754006EBF8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96CB37325760754006EBF8B /* Main.storyboard */; };
@@ -53,6 +54,12 @@
 		E96CB5032579FBEB006EBF8B /* TCNullModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CB5022579FBEB006EBF8B /* TCNullModel.swift */; };
 		E96CB521257A0535006EBF8B /* TCAlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CB520257A0535006EBF8B /* TCAlertUtil.swift */; };
 		E96CB52D257A316B006EBF8B /* TCControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CB52C257A316B006EBF8B /* TCControllerRouter.swift */; };
+		E9706E5C257F2C6400B63362 /* TCFriendListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9706E5B257F2C6400B63362 /* TCFriendListController.swift */; };
+		E9706E65257F2C8300B63362 /* TCMessageListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9706E64257F2C8300B63362 /* TCMessageListController.swift */; };
+		E9706E6C257F47D700B63362 /* TCFriendListBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9706E6B257F47D700B63362 /* TCFriendListBean.swift */; };
+		E9706E74257F486100B63362 /* TCFriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9706E73257F486100B63362 /* TCFriendModel.swift */; };
+		E9706E88257F6BA500B63362 /* TCBaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9706E87257F6BA500B63362 /* TCBaseTableCell.swift */; };
+		E9706E8D257F6BC100B63362 /* TCFriendListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9706E8C257F6BC100B63362 /* TCFriendListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +91,7 @@
 		D5D247B22E59BC6776C3558B /* Pods-TestCHGAdapterSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterSwiftTests/Pods-TestCHGAdapterSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E94D053B257DFD9A0020253A /* TCMineInfoBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMineInfoBean.swift; sourceTree = "<group>"; };
 		E94D0541257E08BE0020253A /* TCTTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCTTModel.swift; sourceTree = "<group>"; };
+		E94D0556257E293F0020253A /* TCMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainViewController.swift; sourceTree = "<group>"; };
 		E96CB36A25760754006EBF8B /* TestCHGAdapterSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCHGAdapterSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96CB36D25760754006EBF8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E96CB37125760754006EBF8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +139,12 @@
 		E96CB5022579FBEB006EBF8B /* TCNullModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCNullModel.swift; sourceTree = "<group>"; };
 		E96CB520257A0535006EBF8B /* TCAlertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAlertUtil.swift; sourceTree = "<group>"; };
 		E96CB52C257A316B006EBF8B /* TCControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCControllerRouter.swift; sourceTree = "<group>"; };
+		E9706E5B257F2C6400B63362 /* TCFriendListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCFriendListController.swift; sourceTree = "<group>"; };
+		E9706E64257F2C8300B63362 /* TCMessageListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMessageListController.swift; sourceTree = "<group>"; };
+		E9706E6B257F47D700B63362 /* TCFriendListBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCFriendListBean.swift; sourceTree = "<group>"; };
+		E9706E73257F486100B63362 /* TCFriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCFriendModel.swift; sourceTree = "<group>"; };
+		E9706E87257F6BA500B63362 /* TCBaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCBaseTableCell.swift; sourceTree = "<group>"; };
+		E9706E8C257F6BC100B63362 /* TCFriendListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCFriendListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +214,14 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		E94D0555257E29160020253A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E94D0556257E293F0020253A /* TCMainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		E96CB36125760754006EBF8B = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +283,9 @@
 		E96CB3BC25760CFA006EBF8B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E9706E63257F2C7500B63362 /* Message */,
+				E9706E5A257F2C2F00B63362 /* Friend */,
+				E94D0555257E29160020253A /* Main */,
 				E94D0540257E08AB0020253A /* Test */,
 				E96CB45A25787444006EBF8B /* Login */,
 				E96CB3BD25760CFA006EBF8B /* Base */,
@@ -275,6 +300,7 @@
 				E96CB3C225760D0E006EBF8B /* TCBaseViewController.swift */,
 				E96CB3C725760D1E006EBF8B /* TCTableViewController.swift */,
 				E96CB3DB2576120E006EBF8B /* TCBaseNavigationController.swift */,
+				E9706E87257F6BA500B63362 /* TCBaseTableCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -415,6 +441,49 @@
 				E96CB4FD2579FBBA006EBF8B /* TCVerificationModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E9706E5A257F2C2F00B63362 /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				E9706E83257F6AFA00B63362 /* Cell */,
+				E9706E6A257F464000B63362 /* Bean */,
+				E9706E69257F464000B63362 /* Model */,
+				E9706E5B257F2C6400B63362 /* TCFriendListController.swift */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		E9706E63257F2C7500B63362 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				E9706E64257F2C8300B63362 /* TCMessageListController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		E9706E69257F464000B63362 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9706E73257F486100B63362 /* TCFriendModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9706E6A257F464000B63362 /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				E9706E6B257F47D700B63362 /* TCFriendListBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		E9706E83257F6AFA00B63362 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E9706E8C257F6BC100B63362 /* TCFriendListCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -658,6 +727,8 @@
 			files = (
 				E96CB3AA25760AA9006EBF8B /* Global.swift in Sources */,
 				E96CB44725775EBE006EBF8B /* TCDataWraper.swift in Sources */,
+				E9706E88257F6BA500B63362 /* TCBaseTableCell.swift in Sources */,
+				E9706E74257F486100B63362 /* TCFriendModel.swift in Sources */,
 				E96CB4B72578D6C0006EBF8B /* TCVerifyCodeController.swift in Sources */,
 				E96CB43525775C9B006EBF8B /* TCBaseParams.swift in Sources */,
 				E96CB475257893D2006EBF8B /* TCUserManager.swift in Sources */,
@@ -669,17 +740,21 @@
 				E96CB521257A0535006EBF8B /* TCAlertUtil.swift in Sources */,
 				E96CB45225777C9B006EBF8B /* TCNullParams.swift in Sources */,
 				E96CB37825760754006EBF8B /* TestCHGAdapterSwift.xcdatamodeld in Sources */,
+				E94D0557257E293F0020253A /* TCMainViewController.swift in Sources */,
 				E96CB3EF257629B7006EBF8B /* TCServiceUrl.swift in Sources */,
 				E96CB42E25775BAC006EBF8B /* TCPrivacyModel.swift in Sources */,
+				E9706E8D257F6BC100B63362 /* TCFriendListCell.swift in Sources */,
 				E94D053C257DFD9A0020253A /* TCMineInfoBean.swift in Sources */,
 				E96CB5032579FBEB006EBF8B /* TCNullModel.swift in Sources */,
 				E96CB3C825760D1E006EBF8B /* TCTableViewController.swift in Sources */,
 				E96CB3C325760D0E006EBF8B /* TCBaseViewController.swift in Sources */,
 				E96CB3CD25760D31006EBF8B /* TCMenuListController.swift in Sources */,
 				E96CB3D725760FAC006EBF8B /* TCMenuTableCell.swift in Sources */,
+				E9706E5C257F2C6400B63362 /* TCFriendListController.swift in Sources */,
 				E96CB4862578B81E006EBF8B /* TCCountryManager.swift in Sources */,
 				E96CB4F42579CEB1006EBF8B /* TCLoginBean.swift in Sources */,
 				E96CB41F25772F6D006EBF8B /* TCIpModel.swift in Sources */,
+				E9706E65257F2C8300B63362 /* TCMessageListController.swift in Sources */,
 				E96CB3FC25762E62006EBF8B /* TCUtility.swift in Sources */,
 				E96CB52D257A316B006EBF8B /* TCControllerRouter.swift in Sources */,
 				E96CB45C2578745A006EBF8B /* TCLoginViewController.swift in Sources */,
@@ -691,6 +766,7 @@
 				E96CB4CC2578E073006EBF8B /* TCLoginBaseController.swift in Sources */,
 				E96CB46525787535006EBF8B /* TCAButton.swift in Sources */,
 				E96CB4FE2579FBBA006EBF8B /* TCVerificationModel.swift in Sources */,
+				E9706E6C257F47D700B63362 /* TCFriendListBean.swift in Sources */,
 				E96CB36E25760754006EBF8B /* AppDelegate.swift in Sources */,
 				E96CB4BC2578D719006EBF8B /* UIExt.swift in Sources */,
 				E96CB4C42578DBF1006EBF8B /* TCUserAgreementView.swift in Sources */,

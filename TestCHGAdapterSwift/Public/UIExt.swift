@@ -164,3 +164,46 @@ extension UIApplication {
         }
     }
 }
+
+
+// MARK: - UIViewController扩展
+extension UIViewController {
+    func createTabbarItem(title:String?, image:UIImage?, selectedImage:UIImage?) -> UITabBarItem {
+        var oImage : UIImage?
+        var sImage : UIImage?
+        if let image = image {
+            oImage = image.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        }
+        if let selectedImage = selectedImage {
+            sImage = selectedImage.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        }
+        return UITabBarItem.init(title: title, image: oImage, selectedImage: sImage)
+    }
+    
+    func createController(className:String, workName:String) -> UIViewController {
+        let cls = NSClassFromString("\(workName).\(className)") as! TCBaseViewController.Type
+        return cls.init()// as! UIViewController
+//        return UIsViewController()
+    }
+}
+
+
+// MARK: - UIImageView扩展
+extension UIImageView {
+    func tc_setImage(url: String?) -> Void {
+        if let url = url {
+            print("url : \(url)")
+            let Url = URL(string: url)
+            self.sd_setImage(with: Url) { (image, error, type, URL) in
+                
+            }
+        }
+    }
+    
+    func tc_setHeaderImage(url: String?) -> Void {
+        if let url = url {
+            let headUrl = url+"?x-oss-process=image/resize,w_200/quality,q_80/format,jpg"
+            self.tc_setImage(url: headUrl)
+        }
+    }
+}

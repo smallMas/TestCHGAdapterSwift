@@ -71,6 +71,7 @@ class TCVerifyCodeController: TCLoginBaseController {
         // Do any additional setup after loading the view.
         setupView()
         layoutUI()
+        self.startTimer()
     }
     
     func setupView() -> Void {

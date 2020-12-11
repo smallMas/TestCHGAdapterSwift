@@ -20,6 +20,10 @@ let TC_CheckValidateCode = "/user/user/mobile/v1/phoneInput/step2/phoneCode/chec
 // 获取本人的用户主页信息
 let TC_MineHomePage = "/user/user/mobile/v1/self/home";
 
+// MARK: - 关系
+// 好友列表(仅dnaer好友)
+let TC_FriendList = "/user/friends/mobile/v1/justfriendlist";
+
 // MARK: - 测试接口
 let TC_IpCountryCode = "/user/user/mobile/v1/find/country/code/ip"
 let TC_PrivacyNotice = "/user/privacy/notice/log/mobile/v1/find"
