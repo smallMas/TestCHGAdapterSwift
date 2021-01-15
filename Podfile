@@ -13,6 +13,8 @@ target 'TestCHGAdapterSwift' do
   pod 'HandyJSON'
   pod 'MBProgressHUD'
   pod 'SDWebImage', '~> 5.0.6'#'4.2.3'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   target 'TestCHGAdapterSwiftTests' do
     inherit! :search_paths

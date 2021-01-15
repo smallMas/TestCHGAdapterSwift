@@ -10,12 +10,12 @@ import CHGAdapter_swift
 
 class TCMenuModel: NSObject, CHGTableViewCellModelProtocol {
     var title : String?
-    var cls : UIViewController?
+    var cls : AnyClass?
     var cellName : String?
     var height : CGFloat?
     
     
-    init(title:String, cls:UIViewController?, cellName:String?, height:CGFloat) {
+    init(title:String, cls:AnyClass?, cellName:String?, height:CGFloat) {
         super.init()
         self.title = title;
         self.cls = cls;

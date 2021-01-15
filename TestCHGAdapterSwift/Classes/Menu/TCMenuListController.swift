@@ -32,8 +32,9 @@ class TCMenuListController: TCTableViewController {
         self.tableView.reloadData()
         self.tableView.setTableViewDidSelectRowBlock { [weak self] (tableView, indexpath, data) in
             let model : TCMenuModel = data as! TCMenuModel
-            if model.cls != nil {
-                self?.navigationController?.pushViewController(model.cls!, animated: true)
+            if let clsType = model.cls as? UIViewController.Type {
+                let vc = clsType.init();
+                self?.navigationController?.pushViewController(vc, animated: true)
             }
         }
         

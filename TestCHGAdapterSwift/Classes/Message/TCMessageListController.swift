@@ -20,6 +20,8 @@ class Human {
 }
 class TCMessageListController: TCTableViewController {
 
+    lazy var btn:UIButton = UIButton.create(type: UIButton.ButtonType.custom, targe: self, action: #selector(tapClick))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -59,6 +61,35 @@ class TCMessageListController: TCTableViewController {
 //        print("human.nicknames2 : \(human.nicknames)")
 ////        print("age : \(human.age)")
 ////        print("name : \(human.name)")
+        
+        self.setupView()
+    }
+ 
+    func setupView() -> Void {
+        self.btn.backgroundColor = COLHEX(s: "#FF00FF")
+        self.view.addSubview(self.btn)
+        self.btn.snp.makeConstraints { (make) in
+            make.width.height.equalTo(100)
+            make.center.equalTo(self.view)
+        }
     }
     
+    @objc func tapClick() -> Void {
+        let vc : TCMenuListController = TCMenuListController()
+        vc.title = "RX 测试";
+        vc.menuArray = [
+            TCMenuModel(title: "RX_TableView", cls: TCRXTableViewController.self, cellName: nil, height: 44),
+            TCMenuModel(title: "RX_ObservableCreate", cls: TCRXObservableCreateController.self, cellName: nil, height: 44),
+            TCMenuModel(title: "RX_ObservableOf", cls: TCRXObservableOfController.self, cellName: nil, height: 44),
+            TCMenuModel(title: "RX_Subscribe", cls: TCRxSubscribeController.self, cellName: nil, height: 44),
+            TCMenuModel(title: "RX_生命周期", cls: TCRxOnViewController.self, cellName: nil, height: 44),
+            TCMenuModel(title: "RX_Dispose", cls: TCRXDisposeViewController.self, cellName: nil, height: 44),
+            TCMenuModel(title: "RX_绑定", cls: RCRXBindViewController.self, cellName: nil, height: 44),
+            TCMenuModel(title: "RX_扩展", cls: TCRXExViewController.self, cellName: nil, height: 44),
+            TCMenuModel(title: "RX_Subjects", cls: TCRXSubjectsViewController.self, cellName: nil, height: 44),
+            TCMenuModel(title: "RX_BehaviorSubject", cls: TCRXBehaviorSubjectViewController.self, cellName: nil, height: 44),
+            TCMenuModel(title: "RX_ReplaySubject", cls: TCRXReplaySubjectViewController.self, cellName: nil, height: 44)
+        ];
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

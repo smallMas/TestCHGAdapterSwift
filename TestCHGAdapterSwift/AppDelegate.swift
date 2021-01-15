@@ -19,7 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        self.test()
 //        self.test2()
-        self.test3()
+//        self.test3()
+        self.test4()
         
         self.initNotification()
         
@@ -75,21 +76,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func test3() -> Void {
-        let json = "[{\"name\":\"fansj\"},{\"name\":\"fanhr\"},{\"name\":\"wangzy\"}]"
-//        var array = JSONDeserializer<Array<TCTTModel>>.deserializeFrom(json: json)
-//        print("array : \(array)")
-        
-        //转data
-        if let jsonData = json.data(using: .utf8){
-            //一：原生解析方法
-            //获取需要的内容，需要考虑数据是否存在，是否拆包
-//            let dicArr = try! JSONSerialization.jsonObject(with: jsonData, options: .allowFragments) as! [[String:AnyObject]]
-//            print("打印所有数据:\(dicArr)")
-//            let name = dicArr[0]["name"] as! String
-//            print("原生获取name \(name)")
-            
-            let array = try?JSONDecoder().decode(Array<TCTTModel>.self, from: jsonData)
-            print("array >>> \(array)")
+//        let json = "[{\"name\":\"fansj\"},{\"name\":\"fanhr\"},{\"name\":\"wangzy\"}]"
+////        var array = JSONDeserializer<Array<TCTTModel>>.deserializeFrom(json: json)
+////        print("array : \(array)")
+//
+//        //转data
+//        if let jsonData = json.data(using: .utf8){
+//            let array = try?JSONDecoder().decode(Array<TCTTModel>.self, from: jsonData)
+//            print("array >>> \(array)")
+//        }
+    }
+    
+    func test4() -> Void {
+        NSLog("==========")
+        DispatchQueue.global().async {
+            for i in 1...3 {
+                print("i : \(i)")
+//                NSLog("i <<<< \(i)")
+//                debugPrint("i >>>>> \(i)")
+            }
+//            DispatchQueue.main.async {
+//                NSLog("----------- end")
+//            }
         }
     }
     

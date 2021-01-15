@@ -10,6 +10,8 @@
 		50F2452A1079C94CC3773C5D /* Pods_TestCHGAdapterSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C892BB9B9C4254E1DFC1DE /* Pods_TestCHGAdapterSwiftTests.framework */; };
 		D0647508BAEECE6D23304229 /* Pods_TestCHGAdapterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE98CEB69D3A2EC2F4A3A0AF /* Pods_TestCHGAdapterSwift.framework */; };
 		E5D529D4A73CBFC9E5ED4663 /* Pods_TestCHGAdapterSwift_TestCHGAdapterSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649C9CBCC52BC6BB9B7B886B /* Pods_TestCHGAdapterSwift_TestCHGAdapterSwiftUITests.framework */; };
+		E94CA3BC25B147B1003D4FD1 /* TCRXBehaviorSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94CA3BB25B147B1003D4FD1 /* TCRXBehaviorSubjectViewController.swift */; };
+		E94CA3C125B1651B003D4FD1 /* TCRXReplaySubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94CA3C025B1651B003D4FD1 /* TCRXReplaySubjectViewController.swift */; };
 		E94D053C257DFD9A0020253A /* TCMineInfoBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D053B257DFD9A0020253A /* TCMineInfoBean.swift */; };
 		E94D0542257E08BE0020253A /* TCTTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D0541257E08BE0020253A /* TCTTModel.swift */; };
 		E94D0557257E293F0020253A /* TCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D0556257E293F0020253A /* TCMainViewController.swift */; };
@@ -60,6 +62,15 @@
 		E9706E74257F486100B63362 /* TCFriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9706E73257F486100B63362 /* TCFriendModel.swift */; };
 		E9706E88257F6BA500B63362 /* TCBaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9706E87257F6BA500B63362 /* TCBaseTableCell.swift */; };
 		E9706E8D257F6BC100B63362 /* TCFriendListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9706E8C257F6BC100B63362 /* TCFriendListCell.swift */; };
+		E987285625B02A0900CD4484 /* TCRxSubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987285525B02A0900CD4484 /* TCRxSubscribeController.swift */; };
+		E987285B25B02FD800CD4484 /* TCRxOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987285A25B02FD800CD4484 /* TCRxOnViewController.swift */; };
+		E987286025B031C700CD4484 /* TCRXDisposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987285F25B031C700CD4484 /* TCRXDisposeViewController.swift */; };
+		E987286525B0329000CD4484 /* RCRXBindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987286425B0329000CD4484 /* RCRXBindViewController.swift */; };
+		E987286A25B037F100CD4484 /* TCRXExViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987286925B037F100CD4484 /* TCRXExViewController.swift */; };
+		E987287B25B1428300CD4484 /* TCRXSubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987287A25B1428200CD4484 /* TCRXSubjectsViewController.swift */; };
+		E9D93D3925A7010100DD3188 /* TCRXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D93D3825A7010100DD3188 /* TCRXTableViewController.swift */; };
+		E9D93D4425A7F3DA00DD3188 /* TCRXObservableCreateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D93D4325A7F3DA00DD3188 /* TCRXObservableCreateController.swift */; };
+		E9D93D4925A8066500DD3188 /* TCRXObservableOfController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D93D4825A8066500DD3188 /* TCRXObservableOfController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +100,8 @@
 		AE98CEB69D3A2EC2F4A3A0AF /* Pods_TestCHGAdapterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCHGAdapterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58456EDB7F17270E0FBFDFA /* Pods-TestCHGAdapterSwift-TestCHGAdapterSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterSwift-TestCHGAdapterSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterSwift-TestCHGAdapterSwiftUITests/Pods-TestCHGAdapterSwift-TestCHGAdapterSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D5D247B22E59BC6776C3558B /* Pods-TestCHGAdapterSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterSwiftTests/Pods-TestCHGAdapterSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E94CA3BB25B147B1003D4FD1 /* TCRXBehaviorSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXBehaviorSubjectViewController.swift; sourceTree = "<group>"; };
+		E94CA3C025B1651B003D4FD1 /* TCRXReplaySubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXReplaySubjectViewController.swift; sourceTree = "<group>"; };
 		E94D053B257DFD9A0020253A /* TCMineInfoBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMineInfoBean.swift; sourceTree = "<group>"; };
 		E94D0541257E08BE0020253A /* TCTTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCTTModel.swift; sourceTree = "<group>"; };
 		E94D0556257E293F0020253A /* TCMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +158,15 @@
 		E9706E73257F486100B63362 /* TCFriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCFriendModel.swift; sourceTree = "<group>"; };
 		E9706E87257F6BA500B63362 /* TCBaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCBaseTableCell.swift; sourceTree = "<group>"; };
 		E9706E8C257F6BC100B63362 /* TCFriendListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCFriendListCell.swift; sourceTree = "<group>"; };
+		E987285525B02A0900CD4484 /* TCRxSubscribeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRxSubscribeController.swift; sourceTree = "<group>"; };
+		E987285A25B02FD800CD4484 /* TCRxOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRxOnViewController.swift; sourceTree = "<group>"; };
+		E987285F25B031C700CD4484 /* TCRXDisposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXDisposeViewController.swift; sourceTree = "<group>"; };
+		E987286425B0329000CD4484 /* RCRXBindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCRXBindViewController.swift; sourceTree = "<group>"; };
+		E987286925B037F100CD4484 /* TCRXExViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXExViewController.swift; sourceTree = "<group>"; };
+		E987287A25B1428200CD4484 /* TCRXSubjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXSubjectsViewController.swift; sourceTree = "<group>"; };
+		E9D93D3825A7010100DD3188 /* TCRXTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXTableViewController.swift; sourceTree = "<group>"; };
+		E9D93D4325A7F3DA00DD3188 /* TCRXObservableCreateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXObservableCreateController.swift; sourceTree = "<group>"; };
+		E9D93D4825A8066500DD3188 /* TCRXObservableOfController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXObservableOfController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +305,7 @@
 		E96CB3BC25760CFA006EBF8B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E9D93D3725A700E700DD3188 /* RXTest */,
 				E9706E63257F2C7500B63362 /* Message */,
 				E9706E5A257F2C2F00B63362 /* Friend */,
 				E94D0555257E29160020253A /* Main */,
@@ -484,6 +507,24 @@
 				E9706E8C257F6BC100B63362 /* TCFriendListCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		E9D93D3725A700E700DD3188 /* RXTest */ = {
+			isa = PBXGroup;
+			children = (
+				E9D93D3825A7010100DD3188 /* TCRXTableViewController.swift */,
+				E9D93D4325A7F3DA00DD3188 /* TCRXObservableCreateController.swift */,
+				E9D93D4825A8066500DD3188 /* TCRXObservableOfController.swift */,
+				E987285525B02A0900CD4484 /* TCRxSubscribeController.swift */,
+				E987285A25B02FD800CD4484 /* TCRxOnViewController.swift */,
+				E987285F25B031C700CD4484 /* TCRXDisposeViewController.swift */,
+				E987286425B0329000CD4484 /* RCRXBindViewController.swift */,
+				E987286925B037F100CD4484 /* TCRXExViewController.swift */,
+				E987287A25B1428200CD4484 /* TCRXSubjectsViewController.swift */,
+				E94CA3BB25B147B1003D4FD1 /* TCRXBehaviorSubjectViewController.swift */,
+				E94CA3C025B1651B003D4FD1 /* TCRXReplaySubjectViewController.swift */,
+			);
+			path = RXTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -728,9 +769,13 @@
 				E96CB3AA25760AA9006EBF8B /* Global.swift in Sources */,
 				E96CB44725775EBE006EBF8B /* TCDataWraper.swift in Sources */,
 				E9706E88257F6BA500B63362 /* TCBaseTableCell.swift in Sources */,
+				E987286A25B037F100CD4484 /* TCRXExViewController.swift in Sources */,
 				E9706E74257F486100B63362 /* TCFriendModel.swift in Sources */,
+				E987286025B031C700CD4484 /* TCRXDisposeViewController.swift in Sources */,
 				E96CB4B72578D6C0006EBF8B /* TCVerifyCodeController.swift in Sources */,
 				E96CB43525775C9B006EBF8B /* TCBaseParams.swift in Sources */,
+				E987285B25B02FD800CD4484 /* TCRxOnViewController.swift in Sources */,
+				E987285625B02A0900CD4484 /* TCRxSubscribeController.swift in Sources */,
 				E96CB475257893D2006EBF8B /* TCUserManager.swift in Sources */,
 				E96CB4B22578CD1F006EBF8B /* SwiftExt.swift in Sources */,
 				E94D0542257E08BE0020253A /* TCTTModel.swift in Sources */,
@@ -741,7 +786,9 @@
 				E96CB45225777C9B006EBF8B /* TCNullParams.swift in Sources */,
 				E96CB37825760754006EBF8B /* TestCHGAdapterSwift.xcdatamodeld in Sources */,
 				E94D0557257E293F0020253A /* TCMainViewController.swift in Sources */,
+				E9D93D3925A7010100DD3188 /* TCRXTableViewController.swift in Sources */,
 				E96CB3EF257629B7006EBF8B /* TCServiceUrl.swift in Sources */,
+				E9D93D4425A7F3DA00DD3188 /* TCRXObservableCreateController.swift in Sources */,
 				E96CB42E25775BAC006EBF8B /* TCPrivacyModel.swift in Sources */,
 				E9706E8D257F6BC100B63362 /* TCFriendListCell.swift in Sources */,
 				E94D053C257DFD9A0020253A /* TCMineInfoBean.swift in Sources */,
@@ -756,11 +803,16 @@
 				E96CB41F25772F6D006EBF8B /* TCIpModel.swift in Sources */,
 				E9706E65257F2C8300B63362 /* TCMessageListController.swift in Sources */,
 				E96CB3FC25762E62006EBF8B /* TCUtility.swift in Sources */,
+				E94CA3C125B1651B003D4FD1 /* TCRXReplaySubjectViewController.swift in Sources */,
 				E96CB52D257A316B006EBF8B /* TCControllerRouter.swift in Sources */,
 				E96CB45C2578745A006EBF8B /* TCLoginViewController.swift in Sources */,
 				E96CB48C2578B8E2006EBF8B /* TCCountryFlagView.swift in Sources */,
+				E94CA3BC25B147B1003D4FD1 /* TCRXBehaviorSubjectViewController.swift in Sources */,
+				E9D93D4925A8066500DD3188 /* TCRXObservableOfController.swift in Sources */,
 				E96CB37225760754006EBF8B /* ViewController.swift in Sources */,
 				E96CB4AD2578CAA7006EBF8B /* NSExt.swift in Sources */,
+				E987286525B0329000CD4484 /* RCRXBindViewController.swift in Sources */,
+				E987287B25B1428300CD4484 /* TCRXSubjectsViewController.swift in Sources */,
 				E96CB4ED2579C951006EBF8B /* TCBaseModel.swift in Sources */,
 				E96CB3F725762AEA006EBF8B /* TCService.swift in Sources */,
 				E96CB4CC2578E073006EBF8B /* TCLoginBaseController.swift in Sources */,
