@@ -63,3 +63,10 @@ extension Reactive where Base : UILabel {
         }
     }
 }
+
+
+//class aa  {
+//    public func asObservable() -> Observable<Element> {
+//        self.values
+//    }
+//}

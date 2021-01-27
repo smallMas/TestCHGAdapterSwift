@@ -12,6 +12,11 @@
 		E5D529D4A73CBFC9E5ED4663 /* Pods_TestCHGAdapterSwift_TestCHGAdapterSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649C9CBCC52BC6BB9B7B886B /* Pods_TestCHGAdapterSwift_TestCHGAdapterSwiftUITests.framework */; };
 		E94CA3BC25B147B1003D4FD1 /* TCRXBehaviorSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94CA3BB25B147B1003D4FD1 /* TCRXBehaviorSubjectViewController.swift */; };
 		E94CA3C125B1651B003D4FD1 /* TCRXReplaySubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94CA3C025B1651B003D4FD1 /* TCRXReplaySubjectViewController.swift */; };
+		E94CA3C625B17261003D4FD1 /* TCRXVariableSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94CA3C525B17261003D4FD1 /* TCRXVariableSubjectViewController.swift */; };
+		E94CA3D225B182D4003D4FD1 /* TCRXTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94CA3D125B182D4003D4FD1 /* TCRXTextFieldViewController.swift */; };
+		E94CA3E925B198E7003D4FD1 /* FrozenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94CA3E825B198E7003D4FD1 /* FrozenModel.swift */; };
+		E94CA3EE25B19980003D4FD1 /* StringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94CA3ED25B19980003D4FD1 /* StringTableViewCell.swift */; };
+		E94CA3F325B199C6003D4FD1 /* StringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94CA3F225B199C6003D4FD1 /* StringViewController.swift */; };
 		E94D053C257DFD9A0020253A /* TCMineInfoBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D053B257DFD9A0020253A /* TCMineInfoBean.swift */; };
 		E94D0542257E08BE0020253A /* TCTTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D0541257E08BE0020253A /* TCTTModel.swift */; };
 		E94D0557257E293F0020253A /* TCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D0556257E293F0020253A /* TCMainViewController.swift */; };
@@ -68,6 +73,7 @@
 		E987286525B0329000CD4484 /* RCRXBindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987286425B0329000CD4484 /* RCRXBindViewController.swift */; };
 		E987286A25B037F100CD4484 /* TCRXExViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987286925B037F100CD4484 /* TCRXExViewController.swift */; };
 		E987287B25B1428300CD4484 /* TCRXSubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987287A25B1428200CD4484 /* TCRXSubjectsViewController.swift */; };
+		E9A3440625B56934003EB215 /* TCOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3440525B56934003EB215 /* TCOtherViewController.swift */; };
 		E9D93D3925A7010100DD3188 /* TCRXTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D93D3825A7010100DD3188 /* TCRXTableViewController.swift */; };
 		E9D93D4425A7F3DA00DD3188 /* TCRXObservableCreateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D93D4325A7F3DA00DD3188 /* TCRXObservableCreateController.swift */; };
 		E9D93D4925A8066500DD3188 /* TCRXObservableOfController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D93D4825A8066500DD3188 /* TCRXObservableOfController.swift */; };
@@ -102,6 +108,11 @@
 		D5D247B22E59BC6776C3558B /* Pods-TestCHGAdapterSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCHGAdapterSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-TestCHGAdapterSwiftTests/Pods-TestCHGAdapterSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E94CA3BB25B147B1003D4FD1 /* TCRXBehaviorSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXBehaviorSubjectViewController.swift; sourceTree = "<group>"; };
 		E94CA3C025B1651B003D4FD1 /* TCRXReplaySubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXReplaySubjectViewController.swift; sourceTree = "<group>"; };
+		E94CA3C525B17261003D4FD1 /* TCRXVariableSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXVariableSubjectViewController.swift; sourceTree = "<group>"; };
+		E94CA3D125B182D4003D4FD1 /* TCRXTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXTextFieldViewController.swift; sourceTree = "<group>"; };
+		E94CA3E825B198E7003D4FD1 /* FrozenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrozenModel.swift; sourceTree = "<group>"; };
+		E94CA3ED25B19980003D4FD1 /* StringTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTableViewCell.swift; sourceTree = "<group>"; };
+		E94CA3F225B199C6003D4FD1 /* StringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringViewController.swift; sourceTree = "<group>"; };
 		E94D053B257DFD9A0020253A /* TCMineInfoBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMineInfoBean.swift; sourceTree = "<group>"; };
 		E94D0541257E08BE0020253A /* TCTTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCTTModel.swift; sourceTree = "<group>"; };
 		E94D0556257E293F0020253A /* TCMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +175,7 @@
 		E987286425B0329000CD4484 /* RCRXBindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCRXBindViewController.swift; sourceTree = "<group>"; };
 		E987286925B037F100CD4484 /* TCRXExViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXExViewController.swift; sourceTree = "<group>"; };
 		E987287A25B1428200CD4484 /* TCRXSubjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXSubjectsViewController.swift; sourceTree = "<group>"; };
+		E9A3440525B56934003EB215 /* TCOtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCOtherViewController.swift; sourceTree = "<group>"; };
 		E9D93D3825A7010100DD3188 /* TCRXTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXTableViewController.swift; sourceTree = "<group>"; };
 		E9D93D4325A7F3DA00DD3188 /* TCRXObservableCreateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXObservableCreateController.swift; sourceTree = "<group>"; };
 		E9D93D4825A8066500DD3188 /* TCRXObservableOfController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCRXObservableOfController.swift; sourceTree = "<group>"; };
@@ -305,6 +317,7 @@
 		E96CB3BC25760CFA006EBF8B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E9A3440425B56907003EB215 /* RXOther */,
 				E9D93D3725A700E700DD3188 /* RXTest */,
 				E9706E63257F2C7500B63362 /* Message */,
 				E9706E5A257F2C2F00B63362 /* Friend */,
@@ -509,6 +522,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		E9A3440425B56907003EB215 /* RXOther */ = {
+			isa = PBXGroup;
+			children = (
+				E9A3440525B56934003EB215 /* TCOtherViewController.swift */,
+			);
+			path = RXOther;
+			sourceTree = "<group>";
+		};
 		E9D93D3725A700E700DD3188 /* RXTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,6 +544,11 @@
 				E987287A25B1428200CD4484 /* TCRXSubjectsViewController.swift */,
 				E94CA3BB25B147B1003D4FD1 /* TCRXBehaviorSubjectViewController.swift */,
 				E94CA3C025B1651B003D4FD1 /* TCRXReplaySubjectViewController.swift */,
+				E94CA3C525B17261003D4FD1 /* TCRXVariableSubjectViewController.swift */,
+				E94CA3D125B182D4003D4FD1 /* TCRXTextFieldViewController.swift */,
+				E94CA3E825B198E7003D4FD1 /* FrozenModel.swift */,
+				E94CA3ED25B19980003D4FD1 /* StringTableViewCell.swift */,
+				E94CA3F225B199C6003D4FD1 /* StringViewController.swift */,
 			);
 			path = RXTest;
 			sourceTree = "<group>";
@@ -768,12 +794,14 @@
 			files = (
 				E96CB3AA25760AA9006EBF8B /* Global.swift in Sources */,
 				E96CB44725775EBE006EBF8B /* TCDataWraper.swift in Sources */,
+				E94CA3C625B17261003D4FD1 /* TCRXVariableSubjectViewController.swift in Sources */,
 				E9706E88257F6BA500B63362 /* TCBaseTableCell.swift in Sources */,
 				E987286A25B037F100CD4484 /* TCRXExViewController.swift in Sources */,
 				E9706E74257F486100B63362 /* TCFriendModel.swift in Sources */,
 				E987286025B031C700CD4484 /* TCRXDisposeViewController.swift in Sources */,
 				E96CB4B72578D6C0006EBF8B /* TCVerifyCodeController.swift in Sources */,
 				E96CB43525775C9B006EBF8B /* TCBaseParams.swift in Sources */,
+				E94CA3E925B198E7003D4FD1 /* FrozenModel.swift in Sources */,
 				E987285B25B02FD800CD4484 /* TCRxOnViewController.swift in Sources */,
 				E987285625B02A0900CD4484 /* TCRxSubscribeController.swift in Sources */,
 				E96CB475257893D2006EBF8B /* TCUserManager.swift in Sources */,
@@ -782,6 +810,8 @@
 				E96CB47E25789429006EBF8B /* TCUserModel.swift in Sources */,
 				E96CB3D225760E6C006EBF8B /* TCMenuModel.swift in Sources */,
 				E96CB3DC2576120E006EBF8B /* TCBaseNavigationController.swift in Sources */,
+				E9A3440625B56934003EB215 /* TCOtherViewController.swift in Sources */,
+				E94CA3D225B182D4003D4FD1 /* TCRXTextFieldViewController.swift in Sources */,
 				E96CB521257A0535006EBF8B /* TCAlertUtil.swift in Sources */,
 				E96CB45225777C9B006EBF8B /* TCNullParams.swift in Sources */,
 				E96CB37825760754006EBF8B /* TestCHGAdapterSwift.xcdatamodeld in Sources */,
@@ -797,11 +827,13 @@
 				E96CB3C325760D0E006EBF8B /* TCBaseViewController.swift in Sources */,
 				E96CB3CD25760D31006EBF8B /* TCMenuListController.swift in Sources */,
 				E96CB3D725760FAC006EBF8B /* TCMenuTableCell.swift in Sources */,
+				E94CA3EE25B19980003D4FD1 /* StringTableViewCell.swift in Sources */,
 				E9706E5C257F2C6400B63362 /* TCFriendListController.swift in Sources */,
 				E96CB4862578B81E006EBF8B /* TCCountryManager.swift in Sources */,
 				E96CB4F42579CEB1006EBF8B /* TCLoginBean.swift in Sources */,
 				E96CB41F25772F6D006EBF8B /* TCIpModel.swift in Sources */,
 				E9706E65257F2C8300B63362 /* TCMessageListController.swift in Sources */,
+				E94CA3F325B199C6003D4FD1 /* StringViewController.swift in Sources */,
 				E96CB3FC25762E62006EBF8B /* TCUtility.swift in Sources */,
 				E94CA3C125B1651B003D4FD1 /* TCRXReplaySubjectViewController.swift in Sources */,
 				E96CB52D257A316B006EBF8B /* TCControllerRouter.swift in Sources */,

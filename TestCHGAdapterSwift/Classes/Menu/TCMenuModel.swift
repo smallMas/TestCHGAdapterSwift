@@ -13,12 +13,21 @@ class TCMenuModel: NSObject, CHGTableViewCellModelProtocol {
     var cls : AnyClass?
     var cellName : String?
     var height : CGFloat?
+    var type : Int?
     
     
     init(title:String, cls:AnyClass?, cellName:String?, height:CGFloat) {
         super.init()
         self.title = title;
         self.cls = cls;
+        self.cellName = cellName;
+        self.height = height;
+    }
+    
+    init(title:String, type:Int?, cellName:String?, height:CGFloat) {
+        super.init()
+        self.title = title;
+        self.type = type;
         self.cellName = cellName;
         self.height = height;
     }

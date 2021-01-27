@@ -6,71 +6,55 @@
 //
 
 import UIKit
-class Human {
-    var age: Int?
-    var name: String?
-    var nicknames: [String] = [String]()
-
-    //返回指向 Human 实例头部的指针
-    func headPointerOfClass() -> UnsafeMutablePointer<Int8> {
-        let opaquePointer = Unmanaged.passUnretained(self as AnyObject).toOpaque()
-        let mutableTypedPointer = opaquePointer.bindMemory(to: Int8.self, capacity: MemoryLayout<Human>.stride)
-        return UnsafeMutablePointer<Int8>(mutableTypedPointer)
-    }
+enum MessageMenu : Int {
+    case rx
+    case other
 }
+
 class TCMessageListController: TCTableViewController {
 
     lazy var btn:UIButton = UIButton.create(type: UIButton.ButtonType.custom, targe: self, action: #selector(tapClick))
+    
+    var menuArray : Array<Any>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.title = "讯息";
-        
-//        let model = TCFriendModel()
-////        let modelPtr : UnsafeMutablePointer<Int8> = model.headPointerOfClass()
-//
-//        let arrFormJson = ["goudan","zhaosi", "wangwu"]
-//
-//        //拿到指向 human 堆内存的 void * 指针
-//        let humanRawPtr = UnsafeMutableRawPointer(model.headPointerOfClass())
-//
-//        //nicknames 数组在内存中偏移 64byte 的位置(16 + 16 + 32)
-//        let humanNickNamesPtr = humanRawPtr.advanced(by: 64).assumingMemoryBound(to: Array<String>.self)
-//        print("model.friendsId1 : \(model.friendUserId)")
-//             //[]
-//        humanNickNamesPtr.initialize(to: arrFormJson)
-//        print("model.friendsId2 : \(model.friendUserId)")
-        
-        
-        
-//        let human = Human()
-//        let arrFormJson = ["goudan","zhaosi", "wangwu"]
-//
-//        //拿到指向 human 堆内存的 void * 指针
-//        let humanRawPtr = UnsafeMutableRawPointer(human.headPointerOfClass())
-//
-//        //nicknames 数组在内存中偏移 64byte 的位置(16 + 16 + 32)
-//        let humanNickNamesPtr =  humanRawPtr.advanced(by: 64).assumingMemoryBound(to: Array<String>.self)
-//        print("human.nicknames1 : \(human.nicknames)")
-//             //[]
-//
-//        humanNickNamesPtr.initialize(to: arrFormJson)
-////        human.nicknames           //["goudan","zhaosi", "wangwu"]
-//        print("human.nicknames2 : \(human.nicknames)")
-////        print("age : \(human.age)")
-////        print("name : \(human.name)")
-        
         self.setupView()
     }
  
     func setupView() -> Void {
-        self.btn.backgroundColor = COLHEX(s: "#FF00FF")
-        self.view.addSubview(self.btn)
-        self.btn.snp.makeConstraints { (make) in
-            make.width.height.equalTo(100)
-            make.center.equalTo(self.view)
+//        self.btn.backgroundColor = COLHEX(s: "#FF00FF")
+//        self.view.addSubview(self.btn)
+//        self.btn.snp.makeConstraints { (make) in
+//            make.width.height.equalTo(100)
+//            make.center.equalTo(self.view)
+//        }
+        
+        self.view .addSubview(self.tableView)
+        menuArray = [
+            TCMenuModel(title: "RX功能", type: MessageMenu.rx.rawValue, cellName: nil, height: 44),
+            TCMenuModel(title: "其他功能", cls: TCOtherViewController.self, cellName: nil, height: 44)
+        ];
+        self.tableView.cellDatas = self.menuArray
+        self.tableView.reloadData()
+        self.tableView.setTableViewDidSelectRowBlock { [weak self] (tableView, indexpath, data) in
+            let model : TCMenuModel = data as! TCMenuModel
+            if let clsType = model.cls as? UIViewController.Type {
+                let vc = clsType.init();
+                self?.navigationController?.pushViewController(vc, animated: true)
+            }else {
+                let menuType = model.type
+                switch menuType {
+                case MessageMenu.rx.rawValue:
+                    self!.tapClick()
+                    break
+                default:
+                    break
+                }
+            }
         }
     }
     
@@ -88,7 +72,10 @@ class TCMessageListController: TCTableViewController {
             TCMenuModel(title: "RX_扩展", cls: TCRXExViewController.self, cellName: nil, height: 44),
             TCMenuModel(title: "RX_Subjects", cls: TCRXSubjectsViewController.self, cellName: nil, height: 44),
             TCMenuModel(title: "RX_BehaviorSubject", cls: TCRXBehaviorSubjectViewController.self, cellName: nil, height: 44),
-            TCMenuModel(title: "RX_ReplaySubject", cls: TCRXReplaySubjectViewController.self, cellName: nil, height: 44)
+            TCMenuModel(title: "RX_ReplaySubject", cls: TCRXReplaySubjectViewController.self, cellName: nil, height: 44),
+            TCMenuModel(title: "RX_VariableSubject", cls: TCRXVariableSubjectViewController.self, cellName: nil, height: 44),
+            TCMenuModel(title: "RX_TextField", cls: TCRXTextFieldViewController.self, cellName: nil, height: 44),
+            TCMenuModel(title: "测试string table", cls: StringViewController.self, cellName: nil, height: 44)
         ];
         self.navigationController?.pushViewController(vc, animated: true)
     }
